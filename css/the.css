@@ -16,6 +16,7 @@ html {
    font: 14px/1.5 'Open Sans', sans-serif;
    color: #535353;
    display: inline;
+   padding: 0 0 0 0;
  }
 
  button {

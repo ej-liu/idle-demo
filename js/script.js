@@ -1,5 +1,5 @@
-var idleTimeRecord = 0.0;
-var activeTimeRecord = 0.0;
+var idleTimeRecord = 0;
+var activeTimeRecord = 0;
 var idle = false;
 
 var idleInterval = setInterval("idleTimeStart()", 1000);
@@ -33,17 +33,24 @@ activeTimeStart();
 
 })(jQuery);
 
-
 function idleTimeStart() {
   if (idle) {
     idleTimeRecord+=1;
-    $("#idle").html(idleTimeRecord);
+    $("#idleHours").html(pad(Math.floor(idleTimeRecord/3600)));
+    $("#idleMinutes").html(pad(Math.floor((idleTimeRecord%3600)/60)));
+    $("#idleSeconds").html(pad((idleTimeRecord%3600)%60));
   }
 }
 
-function activeTimeStart(){
+function activeTimeStart() {
   if (!idle) {
     activeTimeRecord+=1;
-    $("#active").html(activeTimeRecord);
+    $("#activeHours").html(pad(Math.floor(activeTimeRecord/3600)));
+    $("#activeMinutes").html(pad(Math.floor((activeTimeRecord%3600)/60)));
+    $("#activeSeconds").html(pad((activeTimeRecord%3600)%60));
   }
+}
+
+function pad(n) {
+  return (n < 10 ? "0" + n : n);
 }
