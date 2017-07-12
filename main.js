@@ -14,7 +14,7 @@ app.on('window-all-closed', function(){
 app.on('ready', function(){
   // Create browser window
   mainWindow = new BrowserWindow({width:1000,height:800});
-  mainWindow.loadURL('file:///Users/emilyliu/Desktop/glowtouch/idle-demo/index.html');
+  mainWindow.loadURL('file://' + __dirname + '/index.html');
   mainWindow.on('closed', function(){
     mainWindow = null;
   });
