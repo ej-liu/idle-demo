@@ -1,2 +1,2 @@
 # idle-demo
-A timer that tracks active and idle time, compatible with Electron. 
+An application that tracks active and idle time using [Idle Timer](https://github.com/thorst/jquery-idletimer), compatible with Electron. 
