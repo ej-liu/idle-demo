@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+  margin:0;
+  padding: 5px 5px 5px 5px;
+}
+
+html {
+  background: #F6F6F6;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+ p {
+   font: 20px 'Open Sans', sans-serif;
+   color: #535353;
+   display: inline;
+ }
+ button {
+  font: 14px/1.5 'Open Sans', sans-serif;
+   background-color: #EB4B07;
+   width: 70px;
+   color: #fff;
+   border: 0;
+   box-shadow: none;
+   padding: 5px 5px 5px 5px;
+   margin-bottom: 10px;
+ }
