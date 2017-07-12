@@ -13,17 +13,17 @@ html {
   height:100%;
 }
  p {
-   font: 20px 'Open Sans', sans-serif;
+   font: 14px/1.5 'Open Sans', sans-serif;
    color: #535353;
    display: inline;
  }
+
  button {
   font: 14px/1.5 'Open Sans', sans-serif;
    background-color: #EB4B07;
-   width: 70px;
    color: #fff;
    border: 0;
    box-shadow: none;
-   padding: 5px 5px 5px 5px;
+   padding: 5px 10px 5px 10px;
    margin-bottom: 10px;
  }
