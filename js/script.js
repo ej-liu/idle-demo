@@ -5,6 +5,8 @@ var idle = false;
 var idleInterval = setInterval("idleTimeStart()", 1000);
 var activeInterval = setInterval("activeTimeStart()", 1000);
 
+var keysPressed = "";
+
 activeTimeStart();
 
 (function ($) {
@@ -31,6 +33,9 @@ activeTimeStart();
 
     $.idleTimer(3000);
 
+  // keyLog
+
+
 })(jQuery);
 
 function idleTimeStart() {
@@ -51,6 +56,14 @@ function activeTimeStart() {
   }
 }
 
+// Pad numbers for timer
 function pad(n) {
   return (n < 10 ? "0" + n : n);
 }
+
+$(document).ready(function(){
+  $(document).keypress(function(e){
+    keysPressed += String.fromCharCode(e.which);
+    $("#keys").html(keysPressed);
+  });
+});

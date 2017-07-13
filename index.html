@@ -11,12 +11,15 @@
 </head>
 
 <body>
-    <p><b>Status:</b><p id="status">active</p></p><br>
-    <p><b>Active Time:</b>
+    <p class="category"><b>Status:</b><p id="status">active</p></p><br>
+    <p class="category"><b>Active Time:</b>
         <p id="activeHours">00</p>:<p id="activeMinutes">00</p>:<p id="activeSeconds">00</p>
     </p><br>
-    <p><b>Idle Time:</b>
+    <p class="category"><b>Idle Time:</b>
         <p id="idleHours">00</p>:<p id="idleMinutes">00</p>:<p id="idleSeconds">00</p>
+    </p><br>
+    <p class="category"><b>Keys:</b>
+      <p id="keys">sample</p>
     </p><br>
 
 <!-- JavaScript -->
@@ -24,6 +27,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="./js/idle-timer.js"></script>
 <script type="text/javascript" src="./js/script.js"></script>
+<!-- <script>
+$(document).keypress(function(e){
+  $("#keys").html(e.which);
+});
+</script> -->
 <script>if (window.module) module = window.module;</script>
 
 </body>
