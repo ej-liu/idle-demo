@@ -6,6 +6,7 @@ var idleInterval = setInterval("idleTimeStart()", 1000);
 var activeInterval = setInterval("activeTimeStart()", 1000);
 
 var keysPressed = "";
+var keyCount = 0;
 
 activeTimeStart();
 
@@ -62,8 +63,12 @@ function pad(n) {
 }
 
 $(document).ready(function(){
+  $(document).keydown(function(e){
+    keyCount++;
+    $("#keyCount").html(keyCount);
+  });
   $(document).keypress(function(e){
     keysPressed += String.fromCharCode(e.which);
     $("#keys").html(keysPressed);
-  });
+  })
 });
