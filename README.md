@@ -14,6 +14,6 @@ npm start
 ````
 ### Todo
 * Test for tracking active/idle time outside of application window
-* Screen capture ([RobotJS](https://github.com/octalmage/robotjs/tree/bitmap-save))
+* Screen capture (perhaps using [RobotJS](https://github.com/octalmage/robotjs/tree/bitmap-save))
 * Allow capture of multiple screens
 
