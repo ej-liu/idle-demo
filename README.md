@@ -8,5 +8,6 @@ cd idle-demo
 npm start
 ````
 ### Todo
-* Add key logging
 * Test for tracking active/idle time outside of application window
+* Screen capture ([RobotJS](https://github.com/octalmage/robotjs/tree/bitmap-save))
+* Allow capture of multiple screens
