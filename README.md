@@ -1,8 +1,8 @@
 # idle-demo
 An cross-platform application that detects active and idle time using [Idle Timer](https://github.com/thorst/jquery-idletimer), records active and idle time, and tracks keyboard activity. Made with [Electron](https://electron.atom.io/). 
 ### About
-* Starts idle time clock after a specified duration (default = 3 seconds) of keyboard and mouse inactivity. 
-* Starts active time clock when user moves/clicks the mouse over the Idle Demonstration window or when the user presses a key on the keyboard.
+* Starts idle time clock after a specified duration (default = 3 seconds) of keyboard and mouse inactivity
+* Starts active time clock when user moves/clicks the mouse over the Idle Demonstration window or when the user presses a key on the keyboard
 * Records cumulative quantity of keystrokes for the standard keyboard keys
 * Prints string of characters from key logging
 ### Run
